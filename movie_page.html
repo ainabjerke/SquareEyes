@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Aina Bjerke" />
+    <meta
+      name="keywords"
+      content="movies, film, pay per view,new films,buy films"
+    />
+    <meta
+      name="keywords"
+      content="movies, film, pay per view,new films,buy films"
+    />
+    <meta
+      name="description"
+      content="Love to watch hd movie? We offer movies in all categories"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square Eyes |Movie page</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/c084a66896.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Hotjar Tracking Code for https://stupefied-lovelace-480a94.netlify.app/index.html -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2718873, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script src="js/shoppingCart.js" async></script>
+    <link rel="icon" type="image/x-icon" href="images/fav-icon.PNG" />
+  </head>
+  <body>
+    <header class="home-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/Square_eyes_logo_xs.PNG" alt="logo" />
+        </a>
+      </div>
+
+      <nav class="home-header-main-nav">
+        <ul class="topnav">
+          <li><a href="home_page.html">Home </a></li>
+          <li><a href="search_page.html">Search</a></li>
+          <li><a href="movie_page.html" class="active">Movies</a></li>
+          <li><a href="my_account.html">My Account</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Sign out</a></li>
+        </ul>
+      </nav>
+      <div class="cart-btn">
+        <div>
+          <i id="cart" class="fas fa-shopping-basket"></i>
+          <span class="cart-quantity-icon">0</span>
+        </div>
+      </div>
+      <label for="hamburger_menu" class="hamburger_icon">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="hamburger_checkbox" />
+    </header>
+    <main class="main-homepage-style">
+      <!--cart modal-->
+      <section class="premiere premier-content cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+          <h2 class="section-header cart-header-main">Shopping cart</h2>
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items"></div>
+          <div class="cart-total total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+          </div>
+          <a class="search_input_button purchase-btn" href="pay_per_view.html"
+            >check out</a
+          >
+        </div>
+      </section>
+      <!--Movies-->
+      <section class="action action-content">
+        <h1 class="section-header">Action</h1>
+        <div class="content_action content_movies">
+          <div class="action-movie card">
+            <img
+              class="movie-image"
+              src="images/The_world_beyond_xs.jpg"
+              alt="The world beyond"
+            />
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3 class="movie-title">The world beyond</h3>
+            <p>2021-Sci-FI-92min</p>
+            <div class="movie-details">
+              <p class="movie-price">$5.99</p>
+              <button
+                class="btn btn-primary premiere-item-button"
+                type="button"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="action-movie card">
+            <img class="movie-image" src="images/Fury_xs.jpg" alt="Fury" />
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3 class="movie-title">Fury</h3>
+            <p>2021-Sci-FI-92min</p>
+            <div class="movie-details">
+              <p class="movie-price">$5.99</p>
+              <button
+                class="btn btn-primary premiere-item-button"
+                type="button"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="action-movie card">
+            <img
+              class="movie-image"
+              src="images/the_future_xs.jpg"
+              alt="The future"
+            />
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3 class="movie-title">The future</h3>
+            <p>2021-Sci-FI-92min</p>
+            <div class="movie-details">
+              <p class="movie-price">$5.99</p>
+              <button
+                class="btn btn-primary premiere-item-button"
+                type="button"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="action-movie card">
+            <img
+              class="movie-image"
+              src="images/revenge_xs.jpg"
+              alt="Revenge"
+            />
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3 class="movie-title">Revenge</h3>
+            <p>2021-Sci-FI-92min</p>
+            <div class="movie-details">
+              <p class="movie-price">$5.99</p>
+              <button
+                class="btn btn-primary premiere-item-button"
+                type="button"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="action-movie card">
+            <img class="movie-image" src="images/one_jump_xs.jpg" alt="Life" />
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3 class="movie-title">Life</h3>
+            <p>2021-Sci-FI-92min</p>
+            <div class="movie-details">
+              <p class="movie-price">$5.99</p>
+              <button
+                class="btn btn-primary premiere-item-button"
+                type="button"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Animation Movies-->
+      <section class="animation animation-content">
+        <h2 class="section-header">Animation</h2>
+        <div class="content_animation content_animation_movies">
+          <div class="animation-movie">
+            <img
+              class="movie-image"
+              src="images/horizon_xs.jpg"
+              alt="Horizon"
+            />
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h3 class="movie-title">Horizon</h3>
+            <p>2021-Sci-FI-92min</p>
+            <div class="movie-details">
+              <p class="movie-price">$5.99</p>
+              <button
+                class="btn btn-primary premiere-item-button"
+                type="button"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="animation-movie">
+            <img
+              class="movie-image"
+              src="images/to_morrow_xs.jpg"
+              alt="Tomorrow"
+            />
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3 class="movie-title">Tomorrow</h3>
+            <p>2021-Sci-FI-92min</p>
+            <div class="movie-details">
+              <p class="movie-price">$5.99</p>
+              <button
+                class="btn btn-primary premiere-item-button"
+                type="button"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="animation-movie">
+            <img
+              class="movie-image"
+              src="images/light_house_xs.jpg"
+              alt="Lighthouse"
+            />
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3 class="movie-title">Lighthouse</h3>
+            <p>2021-Sci-FI-92min</p>
+            <div class="movie-details">
+              <p class="movie-price">$5.99</p>
+              <button
+                class="btn btn-primary premiere-item-button"
+                type="button"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="animation-movie">
+            <img
+              class="movie-image"
+              src="images/cinderella_xs.jpg"
+              alt="Cinderella"
+            />
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h3 class="movie-title">Cinderella</h3>
+            <p>2021-Sci-FI-92min</p>
+            <div class="movie-details">
+              <p class="movie-price">$5.99</p>
+              <button
+                class="btn btn-primary premiere-item-button"
+                type="button"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="animation-movie">
+            <img
+              class="movie-image"
+              src="images/never_ending_story_xs.jpg"
+              alt="Never ending story"
+            />
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h3 class="movie-title">Never ending story</h3>
+            <p>2021-Sci-FI-92min</p>
+            <div class="movie-details">
+              <p class="movie-price">$5.99</p>
+              <button
+                class="btn btn-primary premiere-item-button"
+                type="button"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

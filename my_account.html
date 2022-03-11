@@ -1,0 +1,130 @@
+Simen Martinsen
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="author" content="Aina Bjerke">
+	<meta name="keywords" content="movies, film, pay per view,new films,buy films" />
+	<meta name="description" content="The greatest movies and stories, all in one place" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Square Eyes |My account</title>
+	<link href="css/styles.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/c084a66896.js" crossorigin="anonymous"></script>
+<!-- Hotjar Tracking Code for https://stupefied-lovelace-480a94.netlify.app/index.html -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2718873,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script src="js/shoppingCart.js" async></script>
+<script src="js/myAccount.js" async></script>
+<link rel="icon" type="image/x-icon" href="images/fav-icon.PNG">
+</head>
+
+<body>
+	<header class="home-header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/Square_eyes_logo_xs.PNG" alt="logo" />
+          </a>
+        </div>
+
+        <nav class="home-header-main-nav">
+          <ul class="topnav">
+            <li><a href="home_page.html">Home </a></li>
+            <li><a href="search_page.html" >Search</a></li>
+            <li><a href="movie_page.html">Movies</a></li>
+            <li><a href="my_account.html"class="active">My Account</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Sign out</a></li>
+          </ul>
+        </nav>
+        <div class="cart-btn">
+          <div>
+            <i id="cart" class="fas fa-shopping-basket"></i>
+            <span class="cart-quantity-icon">0</span>
+          </div>
+        </div>
+		<label for="hamburger_menu" class="hamburger_icon">
+			<i class="fas fa-bars"></i>
+		  </label>
+		  <input type="checkbox" id="hamburger_checkbox" />
+      </header>
+	<main class="main-homepage-style">
+		<!--cart modal-->
+	<section class="premiere premier-content cart-modal-overlay">
+		<div class="cart-modal">
+			<i id="close-btn" class="fas fa-times"></i>
+			<h2 class="section-header cart-header-main">Shopping cart</h2>
+			<div class="cart-row">
+				<span class="cart-item cart-header cart-column">ITEM</span>
+				<span class="cart-price cart-header cart-column">PRICE</span>
+				<span class="cart-quantity cart-header cart-column">QUANTITY</span>
+			</div>
+			<div class="cart-items"></div>
+			<div class="cart-total total">
+				<strong class="cart-total-title">Total</strong>
+				<span class="cart-total-price">$0</span>
+			</div>
+			<a class= "search_input_button purchase-btn" href="pay_per_view.html">check out</a>
+		</div>
+	</section>
+		<!--Payment form-->
+		<div class="row">
+			<div class="col-75">
+				<div class="container">
+					<form id="my-account-form">
+						<div class="row">
+							<div class="col-50">
+								<h1>My account information</h1>
+								<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+								<input type="text" id="fname" name="firstname" placeholder="Aina Bjerke">
+								<label for="email"><i class="fa fa-envelope"></i> Email</label>
+								<input type="text" id="email" name="email" placeholder="aina@example.com">
+								<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+								<input type="text" id="adr" name="address" placeholder="Torg gata 25">
+								<label for="city"><i class="fa fa-institution"></i> City</label>
+								<input type="text" id="city" name="city" placeholder="Oslo">
+								<label for="country"><i class="fas fa-globe-europe"></i> Country</label>
+								<input type="text" id="country" name="country" placeholder="Norway">
+								<div class="row">
+									<div class="col-50">
+										<label for="state">State</label>
+										<input type="text" id="state" name="state" placeholder="Oslo"> </div>
+									<div class="col-50">
+										<label for="zip">Zip</label>
+										<input type="text" id="zip" name="zip" placeholder="0180"> </div>
+								</div>
+							</div>
+						</div>
+						<input type="submit" value="Confirm" class="btn">
+					 </form>
+				</div>
+			</div>
+			<div class="col-25">
+				<div class="container">
+					<h2>Account settings <span class="price"></span></h2>
+					<div class="account_setting_option">
+						<p><i class="far fa-address-card"></i><a href="#" class="active"> My profile</a></p>
+						<p><i class="fas fa-shopping-basket"></i><a href="#"> My purchase</a></p>
+						<p><i class="fas fa-cog"></i><a href="#"> Settings</a></p>
+						<p><i class="far fa-question-circle"></i><a href="#"> Help & contact</a></p>
+						<br>
+						<p><i class="fas fa-sign-out-alt"></i><span><a href="index.html"> Log out</a></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
+</main>
+<footer>Copyright &copy;</footer>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Aina Bjerke" />
+    <meta
+      name="keywords"
+      content="movies, film, pay per view,new films,buy films"
+    />
+    <meta
+      name="description"
+      content="Sign in, sit back and enjoy a mountain of entertainment"
+    />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Square Eyes |Sign in</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/c084a66896.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Hotjar Tracking Code for https://stupefied-lovelace-480a94.netlify.app/index.html -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2718873, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <link rel="icon" type="image/x-icon" href="images/fav-icon.PNG" />
+  </head>
+  <body>
+    <header class="start_page_square_eyes_header">
+      <a href="index.html" class="logo-landing-page">
+        <svg
+          class="logo-landing-page"
+          id="Component_1_1"
+          data-name="Component 1 – 1"
+          xmlns="http://www.w3.org/2000/svg"
+          width="190"
+          height="55"
+          viewBox="0 0 190 55"
+        >
+          <path
+            id="Path_103"
+            data-name="Path 103"
+            d="M0,0"
+            transform="translate(45.098 26.446)"
+            fill="#540fc2"
+            stroke="#540fc0"
+            stroke-width="2"
+            opacity="0.11"
+          />
+          <text
+            id="SQUARE_EYES_"
+            data-name="SQUARE EYES
+              "
+            transform="translate(65 23)"
+            fill="#fff"
+            font-size="20"
+            font-family="SegoeUI-Semibold, Segoe UI"
+            font-weight="600"
+          >
+            <tspan x="0" y="0">SQUARE EYES</tspan>
+            <tspan x="0" y="27"></tspan>
+          </text>
+          <text
+            id="Connecting_film-lovers"
+            data-name="Connecting film-lovers"
+            transform="translate(65 40)"
+            fill="#fff"
+            font-size="9"
+            font-family="SegoeUI, Segoe UI"
+          >
+            <tspan x="0" y="0">Connecting film-lovers</tspan>
+          </text>
+          <g
+            id="Ellipse_16"
+            data-name="Ellipse 16"
+            fill="#bf047e"
+            stroke="#fff"
+            stroke-width="2"
+          >
+            <ellipse cx="30" cy="25.5" rx="30" ry="25.5" stroke="none" />
+            <ellipse cx="30" cy="25.5" rx="29" ry="24.5" fill="none" />
+          </g>
+          <g
+            id="Rectangle_59"
+            data-name="Rectangle 59"
+            transform="translate(27.723 11.897) rotate(-1)"
+            fill="#4c2882"
+            stroke="#707070"
+            stroke-width="1"
+          >
+            <rect width="18.82" height="24.403" stroke="none" />
+            <rect x="0.5" y="0.5" width="17.82" height="23.403" fill="none" />
+          </g>
+          <path
+            id="Exclusion_12"
+            data-name="Exclusion 12"
+            d="M29,40H20A20,20,0,0,1,5.858,5.858,19.869,19.869,0,0,1,20,0h9A20,20,0,0,1,43.142,34.142,19.869,19.869,0,0,1,29,40ZM23.83,25.5l2.507,5.12,15.041,0V20.374H41.2L34.042,7.568H29.272l.923,2.561h3.847l4.771,10.245H8.983l5.4-10.245h4.354l1.045-2.561h-5.4l-8.1,12.806V30.618h15.04Zm12.283,2.474H30.446a2.476,2.476,0,1,1,0-4.952h5.667a2.476,2.476,0,0,1,0,4.952Zm-18.717,0H11.729a2.476,2.476,0,0,1,0-4.952H17.4a2.476,2.476,0,1,1,0,4.952Z"
+            transform="translate(5 5)"
+            fill="#fff"
+            stroke="#570ec0"
+            stroke-width="1"
+          />
+          <line
+            id="Line_15"
+            data-name="Line 15"
+            x2="124"
+            transform="translate(65 29)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2"
+          />
+        </svg>
+      </a>
+      <section class="sign_in_form_box">
+        <div class="header-text">
+          <h1>Sign In</h1>
+        </div>
+
+        <form id="signInForm">
+          <div class="sign_in_input">
+            <label>
+              <input
+                type="text"
+                name="email"
+                id="signInEmail"
+                placeholder="Email adress"
+              />
+
+              <div class="form_error" id="signInEmailError">
+                Please enter a valid email address
+              </div>
+            </label>
+          </div>
+
+          <div class="sign_in_input">
+            <label>
+              <input
+                type="password"
+                name="password"
+                id="signInPassword"
+                placeholder="Your Password"
+              />
+
+              <div class="form_error" id="signInPasswordError">
+                Please enter a valid password, minimum 5 characters
+              </div>
+            </label>
+          </div>
+
+          <button type="submit" class="sign_in_button" id="signInButton">
+            Sign in
+          </button>
+          <div class="sign_in_sign_up">
+            <h2>
+              New to Square Eyes? <a href="create_account.html">Sign up</a>
+            </h2>
+          </div>
+        </form>
+      </section>
+    </header>
+    <script src="js/signIn.js"></script>
+  </body>
+</html>

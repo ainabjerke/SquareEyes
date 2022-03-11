@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Aina Bjerke" />
+    <meta
+      name="keywords"
+      content="movies, film, pay per view,new films,buy films"
+    />
+    <meta
+      name="description"
+      content="watch anywhere, stream videos on a pay per view basis"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square Eyes |Purchase page</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/c084a66896.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Hotjar Tracking Code for https://stupefied-lovelace-480a94.netlify.app/index.html -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2718873, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script src="js/shoppingCart.js" async></script>
+    <link rel="icon" type="image/x-icon" href="images/fav-icon.PNG" />
+  </head>
+
+  <body>
+    <header class="home-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/Square_eyes_logo_xs.PNG" alt="logo" />
+        </a>
+      </div>
+
+      <nav class="home-header-main-nav">
+        <ul class="topnav">
+          <li><a href="home_page.html">Home </a></li>
+          <li><a href="search_page.html">Search</a></li>
+          <li><a href="movie_page.html">Movies</a></li>
+          <li><a href="my_account.html">My Account</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Sign out</a></li>
+        </ul>
+      </nav>
+      <div class="cart-btn">
+        <div>
+          <i id="cart" class="fas fa-shopping-basket"></i>
+          <span class="cart-quantity-icon">0</span>
+        </div>
+      </div>
+      <label for="hamburger_menu" class="hamburger_icon">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="hamburger_checkbox" />
+    </header>
+    <main class="main-homepage-style">
+      <!--cart modal-->
+      <section class="premiere premier-content cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+          <h2 class="section-header cart-header-main">Shopping cart</h2>
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items"></div>
+          <div class="cart-total total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+          </div>
+          <a class="search_input_button purchase-btn" href="pay_per_view.html"
+            >check out</a
+          >
+        </div>
+      </section>
+      <!--Payment form-->
+      <div class="row">
+        <div class="col-75">
+          <div class="container-pay-per-view">
+            <form id="paymentForm">
+              <div class="row">
+                <div class="col-50">
+                  <h1>Payment details</h1>
+
+                  <label for="fname"
+                    >Accepted Cards
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa"></i>
+                      <i class="fa fa-cc-amex"></i>
+                      <i class="fa fa-cc-mastercard"></i>
+                      <i class="fa fa-cc-discover"></i>
+                    </div>
+                  </label>
+                  <label for="cname"
+                    >Name on Card
+                    <input
+                      type="text"
+                      id="cName"
+                      name="cName"
+                      placeholder="Aina Bjerke"
+                    />
+                    <div class="form_error" id="cNameError">
+                      Please fill the requied field
+                    </div>
+                  </label>
+                  <label for="ccnum"
+                    >Credit card number
+                    <input
+                      type="text"
+                      id="ccNum"
+                      name="ccNum"
+                      maxlength="16"
+                      placeholder="1111-2222-3333-4444"
+                    />
+                    <div class="form_error" id="ccNumError">
+                      Please fill the requied field
+                    </div>
+                  </label>
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear"
+                        >Expiry date(MM/YY)
+                        <input
+                          type="text"
+                          id="expYear"
+                          name="expYear"
+                          maxlength="4"
+                          placeholder="MM/YY"
+                        />
+                        <div class="form_error" id="expYearError">
+                          Please fill the requied field
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="col-50">
+                      <label for="cvv"
+                        ><i class="fas fa-credit-card"></i> Security code
+                        <input
+                          type="text"
+                          id="cvv"
+                          name="cvv"
+                          maxlength="3"
+                          placeholder="CVC"
+                        />
+                        <div class="form_error" id="cvvError">
+                          Please fill the requied field
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-75">
+          <div class="container-pay-per-view">
+            <div class="total_price_movie">
+              <div class="cart-total total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+                <button
+                  class="btn btn-primary btn-purchase purchase-btn"
+                  type="button"
+                  id="buttonPayPerView"
+                >
+                  PURCHASE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/payPerView.js"></script>
+    <footer>Copyright &copy;</footer>
+  </body>
+</html>
