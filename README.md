@@ -1,1 +1,1 @@
-# SquareEyes
+# square-eyes-project

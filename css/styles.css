@@ -4,7 +4,6 @@
 
 body {
   background-color: #1e263b;
-  overflow-x: hidden;
 }
 
 .start_page_square_eyes_header {
@@ -72,13 +71,20 @@ body {
 
 .logo {
   text-transform: uppercase;
-  flex: 1;
 }
 
 .sign_in_options {
-  position: relative;
+  /* position: relative;
+  padding: 0px 10px;
+  top: 25px; */
+  padding: 0px 10px;
+  padding-top: 0px;
   top: 25px;
+  position: relative;
+  padding-top: 10px;
+  top: 5px;
   text-align: center;
+  max-width: 100vw;
 }
 
 .create_account_cta {
@@ -87,7 +93,7 @@ body {
   color: #fff;
   font-size: 1em;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 10px 40px;
   border-radius: 5px;
   display: inline-block;
   margin-bottom: 28px;
@@ -106,7 +112,7 @@ body {
   color: #fff;
   font-size: 1em;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 10px 60px;
   border-radius: 5px;
   display: inline-flex;
 }
@@ -140,12 +146,18 @@ body {
   display: inline-block;
   height: 100%;
   cursor: pointer;
+  position: absolute;
+  right: 30px;
 }
 
 .cart-btn,
 #cart,
 #cart::before {
   font-size: 30px;
+}
+
+.cart-btn > div {
+  margin-top: 50%;
 }
 
 .cart-quantity-icon {
@@ -208,7 +220,7 @@ body {
 
   .create_account_cta {
     position: relative;
-    padding: 10px 10px;
+    padding: 12px 10px;
     margin-bottom: 35px;
     left: 0px;
   }
@@ -318,9 +330,10 @@ body {
 @media screen and (min-width: 1627px) {
   .get_started {
     position: relative;
-    padding: 10px 328px;
+    padding-top: 10px;
     top: 5px;
-    font-size: 31px;
+    text-align: center;
+    max-width: 100vw;
   }
 
   .main_page_square_eyes img {
@@ -406,7 +419,7 @@ body {
   text-transform: uppercase;
   padding: 10px 78px;
   border-radius: 5px;
-  /* left: 66px; */
+  left: 0px;
   margin: 0px;
   top: -14px;
 }
@@ -419,7 +432,7 @@ body {
   text-transform: uppercase;
   padding: 10px 74px;
   border-radius: 5px;
-  /* left: 64px; */
+  left: 0px;
 }
 
 @media screen and (max-width: 604px) {
@@ -428,7 +441,7 @@ body {
   }
 
   .form-box {
-    width: 278px;
+    width: 310px;
     height: 550px;
     position: relative;
     left: 0px;
@@ -507,13 +520,13 @@ body {
 
   .create_watcher_account_get_started a {
     padding: 10px 78px;
-    /* left: 166px; */
+    left: 0px;
     margin: 0px;
     top: -14px;
   }
   .create_producer_account_get_started a {
     padding: 10px 74px;
-    /* left: 166px; */
+    left: 0px;
     margin: 0px;
     top: -14px;
   }
@@ -775,23 +788,58 @@ body {
   background-color: #4c2882;
   color: #fff;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
-  flex-direction: row;
-  gap: 10px;
+  flex-direction: column;
 }
 
-.home-header-main-nav a {
+.home-header a {
   color: #fff;
   padding: 15px;
 }
 
+/* .home-header {
+    background-color: #4c2882;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .home-header a {
+    color: #fff;
+    padding: 15px;
+  } */
+
+/* header {
+    background-color: #4c2882;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+  }
+
+  header a {
+    color: #fff;
+    padding: 15px;
+  } */
+
 .logo {
   display: inline-block;
+}
+
+.logo img {
+  width: 250px;
+  height: 88px;
+  object-fit: cover;
 }
 
 .nav {
@@ -814,18 +862,22 @@ nav ul {
 }
 
 .hamburger_icon {
+  position: absolute;
+  right: 12px;
+  top: 22px;
   font-size: 30px;
   padding: 7px 20px;
   box-shadow: -2px 0 0 -1px #d3d0c5;
-  margin: 0;
 }
 
 #hamburger_checkbox {
   cursor: pointer;
+  position: absolute;
   width: 30px;
   height: 27px;
   opacity: 0;
-  display: none;
+  top: 35px;
+  right: 25px;
 }
 
 #hamburger_checkbox:checked ~ nav {
@@ -840,8 +892,13 @@ nav li:hover a {
   font-size: 1.9em;
 }
 
-.home-header-main-nav {
-  flex: 1;
+@media only screen and (max-width: 459px) {
+  .logo img {
+    width: 250px;
+    height: 88px;
+    object-fit: scale-down;
+    object-position: left;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -945,11 +1002,6 @@ nav li:hover a {
   .home-header {
     flex-direction: row;
     align-items: center;
-    padding-right: 30px;
-  }
-
-  .logo {
-    flex: 0;
   }
 
   nav {
@@ -979,7 +1031,7 @@ nav li:hover a {
 main {
   background-color: #1e263b;
   color: #fff;
-  padding: 40px 30px;
+  padding: 40px 0px;
 }
 
 .main-homepage-style {
@@ -1327,6 +1379,22 @@ a {
   margin-bottom: 20px;
 }
 
+/* #content_purchase_movie img {
+    width: 504px;
+    height: 184px;
+    object-fit: cover;
+    max-width: 100%;
+    position: static;
+    margin: 25px 0px;
+    padding: 12px;
+  }
+
+  .purchase_movie_rating {
+    color: #ffcc31;
+    display: flex;
+    justify-content: space-around;
+  } */
+
 .container h1 {
   text-align: center;
 }
@@ -1394,6 +1462,7 @@ label {
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
+  text-align: center;
 }
 
 .btn:hover,
@@ -1468,6 +1537,7 @@ span.price {
     display: flex;
   }
 }
+
 /***************************************************/
 /****************my account page style***************/
 /***************************************************/

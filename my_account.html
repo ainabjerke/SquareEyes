@@ -1,6 +1,6 @@
-Simen Martinsen
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,7 +24,6 @@ Simen Martinsen
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 <script src="js/shoppingCart.js" async></script>
-<script src="js/myAccount.js" async></script>
 <link rel="icon" type="image/x-icon" href="images/fav-icon.PNG">
 </head>
 
@@ -35,7 +34,10 @@ Simen Martinsen
             <img src="images/Square_eyes_logo_xs.PNG" alt="logo" />
           </a>
         </div>
-
+        <label for="hamburger_menu" class="hamburger_icon">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="hamburger_checkbox" />
         <nav class="home-header-main-nav">
           <ul class="topnav">
             <li><a href="home_page.html">Home </a></li>
@@ -52,12 +54,10 @@ Simen Martinsen
             <span class="cart-quantity-icon">0</span>
           </div>
         </div>
-		<label for="hamburger_menu" class="hamburger_icon">
-			<i class="fas fa-bars"></i>
-		  </label>
-		  <input type="checkbox" id="hamburger_checkbox" />
       </header>
+
 	<main class="main-homepage-style">
+
 		<!--cart modal-->
 	<section class="premiere premier-content cart-modal-overlay">
 		<div class="cart-modal">
@@ -75,12 +75,14 @@ Simen Martinsen
 			</div>
 			<a class= "search_input_button purchase-btn" href="pay_per_view.html">check out</a>
 		</div>
+
 	</section>
+
 		<!--Payment form-->
 		<div class="row">
 			<div class="col-75">
 				<div class="container">
-					<form id="my-account-form">
+					<form method="get">
 						<div class="row">
 							<div class="col-50">
 								<h1>My account information</h1>
@@ -104,7 +106,7 @@ Simen Martinsen
 								</div>
 							</div>
 						</div>
-						<input type="submit" value="Confirm" class="btn">
+						<input type="#" value="Confirm" formaction="#" class="btn">
 					 </form>
 				</div>
 			</div>
@@ -123,8 +125,10 @@ Simen Martinsen
 			</div>
 		</div>
 </body>
+
 </html>
 </main>
 <footer>Copyright &copy;</footer>
 </body>
+
 </html>

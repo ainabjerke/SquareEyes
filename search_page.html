@@ -19,7 +19,6 @@
       src="https://kit.fontawesome.com/c084a66896.js"
       crossorigin="anonymous"
     ></script>
-
     <!-- Hotjar Tracking Code for https://stupefied-lovelace-480a94.netlify.app/index.html -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -37,7 +36,6 @@
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
     <script src="js/shoppingCart.js" async></script>
-    <script src="js/search.js" async></script>
     <link rel="icon" type="image/x-icon" href="images/fav-icon.PNG" />
   </head>
 
@@ -48,10 +46,13 @@
           <img src="images/Square_eyes_logo_xs.PNG" alt="logo" />
         </a>
       </div>
+      <label for="hamburger_menu" class="hamburger_icon">
+        <i class="fas fa-bars"></i>
+      </label>
       <input type="checkbox" id="hamburger_checkbox" />
       <nav class="home-header-main-nav">
         <ul class="topnav">
-          <li><a href="home_page.html">Home</a></li>
+          <li><a href="home_page.html">Home </a></li>
           <li><a href="search_page.html" class="active">Search</a></li>
           <li><a href="movie_page.html">Movies</a></li>
           <li><a href="my_account.html">My Account</a></li>
@@ -65,40 +66,37 @@
           <span class="cart-quantity-icon">0</span>
         </div>
       </div>
-      <label for="hamburger_menu" class="hamburger_icon">
-        <i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger_checkbox" />
     </header>
     <main class="search-movie-content main-homepage-style">
-      <!--cart modal-->
-      <section class="premiere premier-content cart-modal-overlay">
-        <div class="cart-modal">
-          <i id="close-btn" class="fas fa-times"></i>
-          <h2 class="section-header cart-header-main">Shopping cart</h2>
-          <div class="cart-row">
-            <span class="cart-item cart-header cart-column">ITEM</span>
-            <span class="cart-price cart-header cart-column">PRICE</span>
-            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-          </div>
-          <div class="cart-items"></div>
-          <div class="cart-total total">
-            <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">$0</span>
-          </div>
-          <a class="search_input_button purchase-btn" href="pay_per_view.html">
-            check out
-          </a>
+
+    <!--cart modal-->
+    <section class="premiere premier-content cart-modal-overlay">
+      <div class="cart-modal">
+        <i id="close-btn" class="fas fa-times"></i>
+        <h2 class="section-header cart-header-main">Shopping cart</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-      </section>
+        <div class="cart-items"></div>
+        <div class="cart-total total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+        </div>
+        <a class= "search_input_button purchase-btn" href="pay_per_view.html">check out</a>
+      </div>
+
+    </section>
+
       <!--Movies-->
       <section class="search_page_sign_in_form_box search_page_style">
         <div class="search_header-text search_input">
-          <form>
-            <h1>Search for movies</h1>
-            <input placeholder="Movie name" type="text" />
-            <button class="search_input_button">Search</button>
-          </form>
+          <h1>Search for movies</h1>
+
+          <input placeholder="Movie name" type="text" />
+
+          <a class="search_input_button" href="#">Search</a>
         </div>
       </section>
     </main>
